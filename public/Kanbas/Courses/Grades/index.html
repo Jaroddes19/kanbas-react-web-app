@@ -3,14 +3,21 @@
 <head>
     <title>Grades Screen</title>
 
-
-
-
-
-
 </head>
 
 <body>
+    <select id="gradebook">
+        <option value="None">None</option>
+        <option selected value="Gradebook">Gradebook</option>
+    </select>
+    <button type="import">Import</button>
+    <select id="export">
+        <option value="None">None</option>
+        <option selected value="Export">Export</option>
+    </select>
+    <button type="button">Configure</button>
+
+
     <h2>Student Names</h2>
     <form id="student-names">
         <label for="text-fields-names"></label>
@@ -22,7 +29,9 @@
         <label for="text-fields-assignment"></label>
         <input id="text-fields-assignment" placeholder="Search Assignments" /><br />
     </form>
-    
+
+    <button type="apply-filters">Apply Filters</button>
+
 
 
     <h2>Grades</h2>
@@ -30,40 +39,163 @@
         <thead>
             <tr>
                 <th>Student Name</th>
-                <th>Topic</th>
-                <th>Date</th>
-                <th>Grade</th>
+                <th>A1 Setup<br>
+                    Out of 100</th>
+                <th>A2 HTML<br>
+                    Out of 100</th>
+                <th>A3 CSS<br>
+                    Out of 100</th>
+                <th>A4 BOOTSTRAP<br>
+                    Out of 100</th>
+                <th>A5 JAVASCRIPT<br>
+                    Out of 100</th>
+                <th>A6 REACT<br>
+                    Out of 100</th>
+                <th>A7 REDUX<br>
+                    Out of 100</th>
+                <th>A8 NODE<br>
+                    Out of 100</th>
+                <th>A9 MONGO<br>
+                    Out of 100</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Q1</td>
-                <td>HTML</td>
-                <td>2/3/21</td>
+                <td>John Doe</td>
+                <td>87</td>
+                <td>92</td>
+                <td>76</td>
+                <td>81</td>
+                <td>90</td>
+                <td>95</td>
+                <td>88</td>
+                <td>79</td>
+                <td>93</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>91</td>
+                <td>85</td>
+                <td>97</td>
+                <td>78</td>
+                <td>89</td>
+                <td>92</td>
+                <td>83</td>
+                <td>95</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>Michael Johnson</td>
+                <td>78</td>
+                <td>94</td>
+                <td>87</td>
+                <td>96</td>
+                <td>82</td>
+                <td>89</td>
+                <td>91</td>
+                <td>83</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Sarah Williams</td>
+                <td>85</td>
+                <td>91</td>
+                <td>79</td>
+                <td>88</td>
+                <td>93</td>
+                <td>86</td>
+                <td>90</td>
+                <td>92</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <td>David Brown</td>
+                <td>92</td>
+                <td>83</td>
+                <td>95</td>
+                <td>87</td>
+                <td>84</td>
+                <td>91</td>
+                <td>89</td>
+                <td>88</td>
+                <td>96</td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>89</td>
+                <td>88</td>
+                <td>82</td>
+                <td>93</td>
+                <td>87</td>
+                <td>96</td>
+                <td>85</td>
+                <td>91</td>
+                <td>83</td>
+            </tr>
+            <tr>
+                <td>Christopher Wilson</td>
+                <td>86</td>
+                <td>90</td>
+                <td>88</td>
+                <td>82</td>
+                <td>95</td>
+                <td>83</td>
+                <td>94</td>
+                <td>87</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>Amanda Taylor</td>
+                <td>94</td>
+                <td>86</td>
+                <td>90</td>
+                <td>89</td>
+                <td>81</td>
+                <td>88</td>
+                <td>96</td>
+                <td>85</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Matthew Martinez</td>
+                <td>83</td>
+                <td>92</td>
+                <td>86</td>
+                <td>90</td>
+                <td>88</td>
+                <td>82</td>
+                <td>95</td>
+                <td>84</td>
+                <td>91</td>
+            </tr>
+            <tr>
+                <td>Olivia Anderson</td>
+                <td>90</td>
+                <td>87</td>
+                <td>93</td>
+                <td>85</td>
+                <td>92</td>
+                <td>84</td>
+                <td>91</td>
+                <td>86</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>William Thompson</td>
+                <td>88</td>
+                <td>89</td>
+                <td>81</td>
+                <td>94</td>
+                <td>86</td>
+                <td>90</td>
+                <td>83</td>
+                <td>93</td>
                 <td>85</td>
             </tr>
-            <tr>
-                <td>Q2</td>
-                <td>CSS</td>
-                <td>2/10/21</td>
-                <td>90</td>
-            </tr>
-            <tr>
-                <td>Q3</td>
-                <td>JavaScript</td>
-                <td>2/17/21</td>
-                <td>95</td>
-            </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">Average</td>
-                <td>90</td>
-            </tr>
-        </tfoot>
     </table>
 
-   
+
 </body>
 
 </html>

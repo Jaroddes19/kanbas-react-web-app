@@ -1,8 +1,8 @@
 <html>
-<table width = "100%">
+<table width="100%">
     <tbody>
         <tr>
-            <td valign = "top">
+            <td valign="top">
 
                 <head>
                     <title>Navigation Screen</title>
@@ -22,15 +22,10 @@
                     </ul>
                 </body>
             </td>
-            <td valign = "top">
+            <td valign="top">
 
                 <head>
                     <title>Course Navigation Screen</title>
-
-
-
-
-
                 </head>
 
                 <body>
@@ -72,207 +67,80 @@
                     </ul>
                 </body>
             </td>
-            <td valign = "top">
+            <td valign="top">
+                <table width="100%" style="border-bottom: 1px solid gray;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option>SpeedGrader</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Assigment Name</h2>
+                <br />
+                <form id="assignment-name">
+                    <textarea cols="1" rows="1">Assignment Name</textarea>
+                </form>
+                <form id="assignment-description">
+                    <textarea cols="1" rows="1">This is the assignments description</textarea>
+                </form>
 
-                <head>
-                    <title>Grades Screen</title>
+                <form id="assignment-description">
+                    <textarea cols="1" rows="1">This is the assignments description</textarea>
+                </form>
 
-                </head>
+                <h5>Points</h5>
+                <input type="number" id="points" value="100" /><br />
+                <h5>Display Grade as</h5>
+                <select>
+                    <option>Points</option>
+                    <option>Percentage</option>
+                    <option>Complete/Incomplete</option>
+                </select><br />
 
-                <body>
-                    <select id="gradebook">
-                        <option value="None">None</option>
-                        <option selected value="Gradebook">Gradebook</option>
-                    </select>
-                    <button type="import">Import</button>
-                    <select id="export">
-                        <option value="None">None</option>
-                        <option selected value="Export">Export</option>
-                    </select>
-                    <button type="button">Configure</button>
+                <h5>Submission Type</h5>
+                <select>
+                    <option>Online</option>
+                    <option>On Paper</option>
+                    <option>No Submission</option>
+                </select><br />
 
+                <h5>Online Entry Options</h5><br />
+                <input type="checkbox" id="checkbox1" value="TEXT-ENTRY" name="entry-options" />
+                <label for="checkbox1">Text Entry</label><br />
+                <input type="checkbox" id="checkbox2" value="WEBSITE-URL" name="entry-options" />
+                <label for="checkbox2">Website URL</label><br />
+                <input type="checkbox" id="checkbox3" value="MEDIA-RECORDINGS" name="entry-options" />
+                <label for="checkbox3">Media Recordings</label><br />
+                <input type="checkbox" id="checkbox4" value="STUDENT-ANNOTATIONS" name="entry-options" />
+                <label for="checkbox4">Student Annotations</label><br />
+                <input type="checkbox" id="checkbox5" value="FILE-UPLOADS" name="entry-options" />
+                <label for="checkbox5">File Uploads</label><br />
 
-                    <h2>Student Names</h2>
-                    <form id="student-names">
-                        <label for="text-fields-names"></label>
-                        <input id="text-fields-names" placeholder="Search Students" /><br />
-                    </form>
+                <h5>Assign to</h5>
+                <select>
+                    <option>Everyone</option>
+                    <option>Sections</option>
+                    <option>Groups</option>
+                    <option>Users</option>
+                </select><br />
 
-                    <h2>Assignment Names</h2>
-                    <form id="assignment-names">
-                        <label for="text-fields-assignment"></label>
-                        <input id="text-fields-assignment" placeholder="Search Assignments" /><br />
-                    </form>
+                <h5>Due Date</h5>
+                <input type="date" id="due-date" value="2021-01-01" /><br />
 
-                    <button type="apply-filters">Apply Filters</button>
+                <h5>Available From</h5>
+                <input type="date" id="available-from" value="2021-01-01" /><br />
 
+                <h5>Until</h5>
+                <input type="date" id="until" value="2021-01-01" /><br />
 
-
-                    <h2>Grades</h2>
-                    <table border="1" width="100%">
-                        <thead>
-                            <tr>
-                                <th>Student Name</th>
-                                <th>A1 Setup<br>
-                                    Out of 100</th>
-                                <th>A2 HTML<br>
-                                    Out of 100</th>
-                                <th>A3 CSS<br>
-                                    Out of 100</th>
-                                <th>A4 BOOTSTRAP<br>
-                                    Out of 100</th>
-                                <th>A5 JAVASCRIPT<br>
-                                    Out of 100</th>
-                                <th>A6 REACT<br>
-                                    Out of 100</th>
-                                <th>A7 REDUX<br>
-                                    Out of 100</th>
-                                <th>A8 NODE<br>
-                                    Out of 100</th>
-                                <th>A9 MONGO<br>
-                                    Out of 100</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>John Doe</td>
-                                <td><input type="number" value="100"></td>
-                                <td>92</td>
-                                <td>76</td>
-                                <td>81</td>
-                                <td>90</td>
-                                <td>95</td>
-                                <td><input type="number" value="88"></td>
-                                <td>79</td>
-                                <td>93</td>
-                            </tr>
-                            <tr>
-                                <td>Jane Smith</td>
-                                <td><input type="number" value="91"></td>
-                                <td>85</td>
-                                <td>97</td>
-                                <td><input type="number" value="78"></td>
-                                <td>89</td>
-                                <td>92</td>
-                                <td>83</td>
-                                <td>95</td>
-                                <td>87</td>
-                            </tr>
-                            <tr>
-                                <td>Michael Johnson</td>
-                                <td>78</td>
-                                <td>94</td>
-                                <td>87</td>
-                                <td>96</td>
-                                <td><input type="number" value="82"></td>
-                                <td>89</td>
-                                <td>91</td>
-                                <td>83</td>
-                                <td>90</td>
-                            </tr>
-                            <tr>
-                                <td>Sarah Williams</td>
-                                <td>85</td>
-                                <td>91</td>
-                                <td>79</td>
-                                <td>88</td>
-                                <td>93</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>92</td>
-                                <td><input type="number" value="84"></td>
-                            </tr>
-                            <tr>
-                                <td>David Brown</td>
-                                <td>92</td>
-                                <td>83</td>
-                                <td><input type="number" value="95"></td>
-                                <td>87</td>
-                                <td>84</td>
-                                <td>91</td>
-                                <td>89</td>
-                                <td>88</td>
-                                <td>96</td>
-                            </tr>
-                            <tr>
-                                <td>Emily Davis</td>
-                                <td>89</td>
-                                <td>88</td>
-                                <td>82</td>
-                                <td>93</td>
-                                <td>87</td>
-                                <td>96</td>
-                                <td>85</td>
-                                <td>91</td>
-                                <td>83</td>
-                            </tr>
-                            <tr>
-                                <td>Christopher Wilson</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>88</td>
-                                <td>82</td>
-                                <td>95</td>
-                                <td>83</td>
-                                <td>94</td>
-                                <td>87</td>
-                                <td>89</td>
-                            </tr>
-                            <tr>
-                                <td>Amanda Taylor</td>
-                                <td>94</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>89</td>
-                                <td>81</td>
-                                <td>88</td>
-                                <td>96</td>
-                                <td>85</td>
-                                <td>92</td>
-                            </tr>
-                            <tr>
-                                <td>Matthew Martinez</td>
-                                <td>83</td>
-                                <td>92</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>88</td>
-                                <td>82</td>
-                                <td>95</td>
-                                <td>84</td>
-                                <td>91</td>
-                            </tr>
-                            <tr>
-                                <td>Olivia Anderson</td>
-                                <td>90</td>
-                                <td>87</td>
-                                <td>93</td>
-                                <td>85</td>
-                                <td>92</td>
-                                <td>84</td>
-                                <td>91</td>
-                                <td>86</td>
-                                <td>88</td>
-                            </tr>
-                            <tr>
-                                <td>William Thompson</td>
-                                <td>88</td>
-                                <td>89</td>
-                                <td>81</td>
-                                <td>94</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>83</td>
-                                <td>93</td>
-                                <td>85</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                </body>
-
-
+                <form action="/Kanbas/Courses/Assignments/index.html">
+                    <input type="submit" value="Cancel">
+                    <input type="submit" value="Save">
+                </form>
             </td>
         </tr>
     </tbody>

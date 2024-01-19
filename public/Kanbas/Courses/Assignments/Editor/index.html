@@ -1,0 +1,77 @@
+<table width="100%" style="border-bottom: 1px solid gray;">
+    <tbody>
+        <tr>
+            <td>
+                <select>
+                    <option>SpeedGrader</option>
+                </select>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h2>Assigment Name</h2>
+<br />
+    <form id="assignment-name">
+        <textarea cols="20"
+            rows="1">Assignment Name</textarea>
+    </form>
+    <form id="assignment-description">
+        <textarea cols="1"
+            rows="1">This is the assignments description</textarea>
+    </form>
+
+    <form id="assignment-description">
+        <textarea cols="1"
+            rows="1">This is the assignments description</textarea>
+    </form>
+
+    <h5>Points</h5>
+    <input type="number" id="points" value="100" /><br />
+    <h5>Display Grade as</h5>
+    <select>
+        <option>Points</option>
+        <option>Percentage</option>
+        <option>Complete/Incomplete</option>
+    </select><br />
+
+    <h5>Submission Type</h5>
+    <select>
+        <option>Online</option>
+        <option>On Paper</option>
+        <option>No Submission</option>
+    </select><br />
+
+    <h5>Online Entry Options</h5><br />
+    <input type="checkbox" id="checkbox1" value="TEXT-ENTRY" name="entry-options" />
+    <label for="checkbox1">Text Entry</label><br />
+    <input type="checkbox" id="checkbox2" value="WEBSITE-URL" name="entry-options" />
+    <label for="checkbox2">Website URL</label><br />
+    <input type="checkbox" id="checkbox3" value="MEDIA-RECORDINGS" name="entry-options" />
+    <label for="checkbox3">Media Recordings</label><br />
+    <input type="checkbox" id="checkbox4" value="STUDENT-ANNOTATIONS" name="entry-options" />
+    <label for="checkbox4">Student Annotations</label><br />
+    <input type="checkbox" id="checkbox5" value="FILE-UPLOADS" name="entry-options" />
+    <label for="checkbox5">File Uploads</label><br />
+
+    <h5>Assign to</h5>
+    <select>
+        <option>Everyone</option>
+        <option>Sections</option>
+        <option>Groups</option>
+        <option>Users</option>
+    </select><br />
+
+    <h5>Due Date</h5>
+    <input type="date" id="due-date" value="2021-01-01" /><br />
+
+    <h5>Available From</h5>
+    <input type="date" id="available-from" value="2021-01-01" /><br />
+
+    <h5>Until</h5>
+    <input type="date" id="until" value="2021-01-01" /><br />
+
+    <form action="/Kanbas/Courses/Assignments/index.html">
+        <input type="submit" value="Cancel">
+        <input type="submit" value="Save">
+    </form>
+

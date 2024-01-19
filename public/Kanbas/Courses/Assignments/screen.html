@@ -1,8 +1,8 @@
 <html>
-<table width = "100%">
+<table width="100%">
     <tbody>
         <tr>
-            <td valign = "top">
+            <td valign="top">
 
                 <head>
                     <title>Navigation Screen</title>
@@ -22,7 +22,7 @@
                     </ul>
                 </body>
             </td>
-            <td valign = "top">
+            <td valign="top">
 
                 <head>
                     <title>Course Navigation Screen</title>
@@ -72,207 +72,140 @@
                     </ul>
                 </body>
             </td>
-            <td valign = "top">
+            <td valign="top">
 
-                <head>
-                    <title>Grades Screen</title>
-
-                </head>
-
-                <body>
-                    <select id="gradebook">
-                        <option value="None">None</option>
-                        <option selected value="Gradebook">Gradebook</option>
-                    </select>
-                    <button type="import">Import</button>
-                    <select id="export">
-                        <option value="None">None</option>
-                        <option selected value="Export">Export</option>
-                    </select>
-                    <button type="button">Configure</button>
-
-
-                    <h2>Student Names</h2>
-                    <form id="student-names">
-                        <label for="text-fields-names"></label>
-                        <input id="text-fields-names" placeholder="Search Students" /><br />
-                    </form>
-
-                    <h2>Assignment Names</h2>
-                    <form id="assignment-names">
-                        <label for="text-fields-assignment"></label>
-                        <input id="text-fields-assignment" placeholder="Search Assignments" /><br />
-                    </form>
-
-                    <button type="apply-filters">Apply Filters</button>
-
-
-
-                    <h2>Grades</h2>
-                    <table border="1" width="100%">
-                        <thead>
-                            <tr>
-                                <th>Student Name</th>
-                                <th>A1 Setup<br>
-                                    Out of 100</th>
-                                <th>A2 HTML<br>
-                                    Out of 100</th>
-                                <th>A3 CSS<br>
-                                    Out of 100</th>
-                                <th>A4 BOOTSTRAP<br>
-                                    Out of 100</th>
-                                <th>A5 JAVASCRIPT<br>
-                                    Out of 100</th>
-                                <th>A6 REACT<br>
-                                    Out of 100</th>
-                                <th>A7 REDUX<br>
-                                    Out of 100</th>
-                                <th>A8 NODE<br>
-                                    Out of 100</th>
-                                <th>A9 MONGO<br>
-                                    Out of 100</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>John Doe</td>
-                                <td><input type="number" value="100"></td>
-                                <td>92</td>
-                                <td>76</td>
-                                <td>81</td>
-                                <td>90</td>
-                                <td>95</td>
-                                <td><input type="number" value="88"></td>
-                                <td>79</td>
-                                <td>93</td>
-                            </tr>
-                            <tr>
-                                <td>Jane Smith</td>
-                                <td><input type="number" value="91"></td>
-                                <td>85</td>
-                                <td>97</td>
-                                <td><input type="number" value="78"></td>
-                                <td>89</td>
-                                <td>92</td>
-                                <td>83</td>
-                                <td>95</td>
-                                <td>87</td>
-                            </tr>
-                            <tr>
-                                <td>Michael Johnson</td>
-                                <td>78</td>
-                                <td>94</td>
-                                <td>87</td>
-                                <td>96</td>
-                                <td><input type="number" value="82"></td>
-                                <td>89</td>
-                                <td>91</td>
-                                <td>83</td>
-                                <td>90</td>
-                            </tr>
-                            <tr>
-                                <td>Sarah Williams</td>
-                                <td>85</td>
-                                <td>91</td>
-                                <td>79</td>
-                                <td>88</td>
-                                <td>93</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>92</td>
-                                <td><input type="number" value="84"></td>
-                            </tr>
-                            <tr>
-                                <td>David Brown</td>
-                                <td>92</td>
-                                <td>83</td>
-                                <td><input type="number" value="95"></td>
-                                <td>87</td>
-                                <td>84</td>
-                                <td>91</td>
-                                <td>89</td>
-                                <td>88</td>
-                                <td>96</td>
-                            </tr>
-                            <tr>
-                                <td>Emily Davis</td>
-                                <td>89</td>
-                                <td>88</td>
-                                <td>82</td>
-                                <td>93</td>
-                                <td>87</td>
-                                <td>96</td>
-                                <td>85</td>
-                                <td>91</td>
-                                <td>83</td>
-                            </tr>
-                            <tr>
-                                <td>Christopher Wilson</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>88</td>
-                                <td>82</td>
-                                <td>95</td>
-                                <td>83</td>
-                                <td>94</td>
-                                <td>87</td>
-                                <td>89</td>
-                            </tr>
-                            <tr>
-                                <td>Amanda Taylor</td>
-                                <td>94</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>89</td>
-                                <td>81</td>
-                                <td>88</td>
-                                <td>96</td>
-                                <td>85</td>
-                                <td>92</td>
-                            </tr>
-                            <tr>
-                                <td>Matthew Martinez</td>
-                                <td>83</td>
-                                <td>92</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>88</td>
-                                <td>82</td>
-                                <td>95</td>
-                                <td>84</td>
-                                <td>91</td>
-                            </tr>
-                            <tr>
-                                <td>Olivia Anderson</td>
-                                <td>90</td>
-                                <td>87</td>
-                                <td>93</td>
-                                <td>85</td>
-                                <td>92</td>
-                                <td>84</td>
-                                <td>91</td>
-                                <td>86</td>
-                                <td>88</td>
-                            </tr>
-                            <tr>
-                                <td>William Thompson</td>
-                                <td>88</td>
-                                <td>89</td>
-                                <td>81</td>
-                                <td>94</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>83</td>
-                                <td>93</td>
-                                <td>85</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                </body>
-
-
+                <table width="100%" style="border-bottom: 1px solid gray;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input placeholder="Search for Assignments" />
+                                <button>+ Group</button>
+                                <button>+ Assignment</button>
+                                <select>
+                                    <option>Edit Assigment Dates</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>ASSIGNMENTS 40% of Total </h2> <button>+</button>
+                <select>
+                    <option>Edit</option>
+                    <option>Delete</option>
+                    <option>Move</option>
+                </select>
+                <ul>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Editor/screen.html">A1</a>
+                        <select>
+                            <option>Edit</option>
+                            <option>Delete</option>
+                            <option>Move</option>
+                        </select><br />
+                        <a href="#">Multiple Modules</a> | Not Available
+                        Due: 2019-01-01 | 100 pts
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Editor/screen.html">A2</a>
+                        <select>
+                            <option>Edit</option>
+                            <option>Delete</option>
+                            <option>Move</option>
+                        </select><br />
+                        <a href="#">Multiple Modules</a> | Not Available
+                        Due: 2019-01-01 | 100 pts
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Editor/screen.html">A3</a>
+                        <select>
+                            <option>Edit</option>
+                            <option>Delete</option>
+                            <option>Move</option>
+                        </select><br />
+                        <a href="#">Multiple Modules</a> | Not Available
+                        Due: 2019-01-01 | 100 pts
+                    </li>
+                </ul>
+                <h2>QUIZZES 10% of Total </h2> <button>+</button>
+                <select>
+                    <option>Edit</option>
+                    <option>Delete</option>
+                    <option>Move</option>
+                </select>
+                <ul>
+                    <li><a href="/Kanbas/Courses/Assignments/Editor/screen.html">Q1</a>
+                        <select>
+                            <option>Edit</option>
+                            <option>Delete</option>
+                            <option>Move</option>
+                        </select><br />
+                        <a href="#">Multiple Modules</a> | Not Available
+                    </li>
+                    <li><a href="/Kanbas/Courses/Assignments/Editor/screen.html">Q2</a>
+                        <select>
+                            <option>Edit</option>
+                            <option>Delete</option>
+                            <option>Move</option>
+                        </select><br />
+                        <a href="#">Multiple Modules</a> | Not Available
+                    </li>
+                    <li><a href="/Kanbas/Courses/Assignments/Editor/screen.html">Q3</a>
+                        <select>
+                            <option>Edit</option>
+                            <option>Delete</option>
+                            <option>Move</option>
+                        </select><br />
+                        <a href="#">Multiple Modules</a> | Not Available
+                    </li>
+                </ul>
+                <h2>EXAMS 20% of Total </h2> <button>+</button>
+                <select>
+                    <option>Edit</option>
+                    <option>Delete</option>
+                    <option>Move</option>
+                </select>
+                <ul>
+                    <li><a href="/Kanbas/Courses/Assignments/Editor/screen.html">X1</a>
+                        <select>
+                            <option>Edit</option>
+                            <option>Delete</option>
+                            <option>Move</option>
+                        </select><br />
+                        <a href="#">Multiple Modules</a> | Not Available
+                    </li>
+                    <li><a href="/Kanbas/Courses/Assignments/Editor/screen.html">X2</a>
+                        <select>
+                            <option>Edit</option>
+                            <option>Delete</option>
+                            <option>Move</option>
+                        </select><br />
+                        <a href="#">Multiple Modules</a> | Not Available
+                    </li>
+                </ul>
+                <h2>PROJECTS 30% of Total </h2> <button>+</button>
+                <select>
+                    <option>Edit</option>
+                    <option>Delete</option>
+                    <option>Move</option>
+                </select>
+                <ul>
+                    <li><a href="/Kanbas/Courses/Assignments/Editor/screen.html">P1</a>
+                        <select>
+                            <option>Edit</option>
+                            <option>Delete</option>
+                            <option>Move</option>
+                        </select><br />
+                        <a href="#">Multiple Modules</a> | Not Available
+                    </li>
+                    <li><a href="/Kanbas/Courses/Assignments/Editor/screen.html">P2</a>
+                        <select>
+                            <option>Edit</option>
+                            <option>Delete</option>
+                            <option>Move</option>
+                        </select><br />
+                        <a href="#">Multiple Modules</a> | Not Available
+                    </li>
+                </ul>
             </td>
         </tr>
     </tbody>

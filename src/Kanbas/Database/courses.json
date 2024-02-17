@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "RS101",
+    "name": "Computer Science 101",
+    "number": "CS1111",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "rocket-propulsion.png"
+  },
+  {
+    "_id": "RS102",
+    "name": "Computer Science 102",
+    "number": "CS1112",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "aerodynamics.png"
+  },
+  {
+    "_id": "RS103",
+    "name": "Computer Science 103",
+    "number": "CS1113",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "spaceship-design.png"
+  }
+]

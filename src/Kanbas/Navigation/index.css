@@ -1,0 +1,92 @@
+.wd-kanbas-navigation {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 10px;
+  width: 80px;
+  height: 100vh;
+}
+
+.wd-kanbas-navigation li {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.wd-kanbas-navigation li.wd-account a i {
+
+  color: white;
+}
+
+.wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
+
+.wd-kanbas-navigation li.wd-active-account {
+  background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active-account a {
+  color: red;
+}
+
+.wd-kanbas-navigation li.wd-active-account a i {
+  color: red;
+}
+
+.wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 4px;
+}
+
+.wd-dropdown {
+  background-color: black;
+  list-style: none;
+  display: inline-flex;
+}
+
+.wd-dropdown li {
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 33%;
+  padding-bottom: 10px;
+  color: white;
+  display: inline-flex;
+  text-align: center;
+}
+
+.wd-dropdown li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.wd-x {
+  padding: 10px;
+  margin: 16px;
+  color: red;
+  float: right;
+}
+
+.wd-x button {
+  color: red;
+  border-radius: 12px;
+  width: 40px;
+  background-color: #e7e7e7;
+  text-decoration: none;
+}

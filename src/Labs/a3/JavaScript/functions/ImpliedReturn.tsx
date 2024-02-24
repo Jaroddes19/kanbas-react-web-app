@@ -12,3 +12,4 @@ function ImpliedReturns() {
     </>
   )
 }
+export default ImpliedReturns;

@@ -7,6 +7,7 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import CourseNavigationScreen from "./Navigation/screen";
 import Dropdown from "../Navigation/dropdown";
+import Grades from "./Grades";
 
 
 function Courses() {
@@ -33,7 +34,7 @@ function Courses() {
               <Route path="Modules" element={<Modules />} />
               <Route path="Assignments" element={<Assignments />} />
               <Route path="Assignments/:assignmentId" element={<h1>Assignment Editor</h1>} />
-              <Route path="Grades" element={<h1>Grades</h1>} />
+              <Route path="Grades" element={<Grades/>} />
               <Route path="CNav" element={<CourseNavigationScreen />} />
             </Routes>
           </div>

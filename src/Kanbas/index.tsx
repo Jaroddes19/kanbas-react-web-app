@@ -4,9 +4,11 @@ import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import NavigationScreen from "./Navigation/screen";
 import Account from "./Account";
+import Nav from "../Nav";
 function Kanbas() {
   return (
     <div>
+      <Nav />
       <div className="d-flex">
         <div className="d-none d-sm-block">
           <KanbasNavigation />

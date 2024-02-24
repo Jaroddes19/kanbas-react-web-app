@@ -29,7 +29,7 @@ import JsonStringify from "./JavaScript/json/JsonStringify";
 import Spreading from "./JavaScript/json/Spreading";
 import TemplateLiterals from "./JavaScript/string/TemplateLiterals";
 
-function Assignment3() {
+function Assignment3() { 
   return (
     <div className="container">
       <h1>Assignment 3</h1>

@@ -22,6 +22,23 @@
   margin: 5px;
 }
 
+.wd-modules button {
+  border-radius: 6px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 4px;
+  color: white;
+}
+
+.wd-modules input{
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+
+.wd-modules textarea{
+  border: 2px solid gray;
+  border-radius: 4px;
+}
 .wd-modules > li {
   background-color: lightgray;
   border: 1px solid gray !important;

@@ -8,7 +8,6 @@ import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 import Highlight from "./Highlight";
 import Add from "./Add";
-import TodoList from "./todos/TodoList";
 import AddingAndRemovingDataToFromArrays from "./JavaScript/arrays/AddingAndRemovingDataToFromArrays";
 import ArrayIndexAndLength from "./JavaScript/arrays/ArrayIndexAndLength";
 import FilterFunction from "./JavaScript/arrays/FilterFunction";

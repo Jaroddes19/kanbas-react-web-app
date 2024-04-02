@@ -1,4 +1,5 @@
-import { courses } from "../../Kanbas/Database";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import { HiMiniArrowRight, HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
@@ -9,10 +10,22 @@ import CourseNavigationScreen from "./Navigation/screen";
 import Dropdown from "../Navigation/dropdown";
 import Grades from "./Grades";
 
-
+const API_BASE = process.env.REACT_APP_API_BASE;
 function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const COURSES_API = `${API_BASE}/api/courses`;
+  const [course, setCourse] = useState<any>({ _id: "" });
+  const findCourseById = async (courseId?: string) => {
+    const response = await axios.get(
+      `${COURSES_API}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+
   return (
     <div>
       <div className="d-sm-none row">
@@ -34,7 +47,7 @@ function Courses({ courses }: { courses: any[]; }) {
               <Route path="Modules" element={<Modules />} />
               <Route path="Assignments" element={<Assignments />} />
               <Route path="Assignments/:assignmentId" element={<h1>Assignment Editor</h1>} />
-              <Route path="Grades" element={<Grades/>} />
+              <Route path="Grades" element={<Grades />} />
               <Route path="CNav" element={<CourseNavigationScreen />} />
             </Routes>
           </div>

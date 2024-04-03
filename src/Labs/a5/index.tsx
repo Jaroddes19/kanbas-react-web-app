@@ -1,3 +1,7 @@
+import EncodingParametersInURLs from "./EncodingParametersInURLs";
+import WorkingWithArrays from "./WorkingWithArrays";
+import WorkingWithObjects from "./WorkingWithObjects";
+
 const API_BASE = process.env.REACT_APP_API_BASE;
 function Assignment5() {
         return (
@@ -6,6 +10,9 @@ function Assignment5() {
                 <a href={`${API_BASE}/a5/welcome`}>
                     Welcome
                 </a>
+                <EncodingParametersInURLs/>
+                <WorkingWithArrays/>
+                <WorkingWithObjects/>
             </div>
         );
     }

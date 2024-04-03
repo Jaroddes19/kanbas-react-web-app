@@ -23,7 +23,7 @@ function Kanbas() {
 
   const [course, setCourse] = useState({
     _id: "1234", name: "New Course", number: "New Number",
-    startDate: "2023-09-10", endDate: "2023-12-15",
+    startDate: "2023-09-10", endDate: "2023-12-15", image: "minio.png",
   });
   const addNewCourse = async () => {
     const response = await axios.post(COURSES_API, course);

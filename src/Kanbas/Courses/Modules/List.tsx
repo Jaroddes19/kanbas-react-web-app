@@ -20,7 +20,6 @@ type Lesson = {
   description: string,
   module: string;
 }
-type Module = { _id: string; name: string; description: string, course: string, lesson: Lesson }
 
 
 function ModuleList() {

@@ -9,21 +9,19 @@ import Assignments from "./Assignments";
 import CourseNavigationScreen from "./Navigation/screen";
 import Dropdown from "../Navigation/dropdown";
 import Grades from "./Grades";
-
-const API_BASE = process.env.REACT_APP_API_BASE;
+import * as client from "./client";
 function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
-  const COURSES_API = `${API_BASE}/api/courses`;
   const [course, setCourse] = useState<any>({ _id: "" });
-  const findCourseById = async (courseId?: string) => {
-    const response = await axios.get(
-      `${COURSES_API}/${courseId}`
-    );
-    setCourse(response.data);
+  const findCourseById = async (courseId: string) => {
+    const course = await client.findCourseById(courseId);
+    setCourse(course);
   };
   useEffect(() => {
-    findCourseById(courseId);
-  }, [courseId]);
+    if (courseId) {
+      findCourseById(courseId);
+    }
+  }, []);
 
 
   return (

@@ -3,7 +3,7 @@ import "./index.css";
 import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt, FaInbox, FaRegClock, FaCameraRetro, FaGlobe, FaInfoCircle } from "react-icons/fa";
 function KanbasNavigation() {
   const links = [
-    { label: "Account", icon: <FaRegUserCircle className="fs-2" />, redirect: "Account/Profile" },
+    { label: "Account", icon: <FaRegUserCircle className="fs-2" />, redirect: "Account/" },
     { label: "Dashboard", icon: <FaTachometerAlt className="fs-2" />, redirect: "Dashboard" },
     { label: "Courses", icon: <FaBook className="fs-2" />, redirect: "Dashboard" },
     { label: "Calendar", icon: <FaRegCalendarAlt className="fs-2" />, redirect: "Dashboard" },

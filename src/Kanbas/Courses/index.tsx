@@ -12,7 +12,10 @@ import Grades from "./Grades";
 import * as client from "./client";
 function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
-  const [course, setCourse] = useState<any>({ _id: "" });
+  const [course, setCourse] = useState({
+    _id: "", id: "1234", name: "New Course", number: "New Number",
+    startDate: "2023-09-10", endDate: "2023-12-15", image: "minio.png",
+  });
   const findCourseById = async (courseId: string) => {
     const course = await client.findCourseById(courseId);
     setCourse(course);
@@ -21,7 +24,7 @@ function Courses({ courses }: { courses: any[]; }) {
     if (courseId) {
       findCourseById(courseId);
     }
-  }, []);
+  }, [courseId]);
 
 
   return (
@@ -30,7 +33,7 @@ function Courses({ courses }: { courses: any[]; }) {
         <Dropdown />
       </div>
       <div className="p-4 d-none d-sm-block">
-        <h2><HiMiniBars3 /> <span style={{ paddingLeft: '0.5rem' }}>Course</span> <HiMiniArrowRight /> {course?.name}</h2>
+        <h2><HiMiniBars3 /> <span style={{ paddingLeft: '0.5rem' }}>Course</span> <HiMiniArrowRight /> {course.name}</h2>
         <hr />
       </div>
       <div className="d-flex">

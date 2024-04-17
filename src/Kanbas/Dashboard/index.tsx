@@ -3,8 +3,8 @@ import "./index.css";
 function Dashboard({ courses, course, setCourse, addNewCourse,
   deleteCourse, updateCourse }: {
     courses: any[]; course: any; setCourse: (course: any) => void;
-    addNewCourse: () => void; deleteCourse: (course: any) => void;
-    updateCourse: () => void;
+    addNewCourse: () => Promise<void>; deleteCourse: (course: any) => Promise<void>;
+    updateCourse: () => Promise<void>;
   }) {
 
   return (
@@ -27,14 +27,14 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
       </button>
 
 
-      <h2>Published Courses (12)</h2> <hr />
+      <h2>Published Courses ({courses.length})</h2> <hr />
       <div className="row">
         <div className="row row-cols-1 row-cols-md-5 g-4">
           {courses.map((course) => (
-            <div key={course._id} className="col" style={{ width: 300 }}>
+            <div key={course.id} className="col" style={{ width: 300 }}>
               <div className="card">
                 <img src={`/images/${course.image}`} className="card-img-top"
-                  style={{ height: 150 }} />
+                  style={{ height: 150 }} alt={"minion"} />
                 <div className="card-body">
                   <Link className="card-title" to={`/Kanbas/Courses/${course._id}/Home`}
                     style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>
@@ -50,11 +50,11 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
 
                   <button style={{ background: "red" }} className="wd-button" onClick={(event) => {
                     event.preventDefault();
-                    deleteCourse(course._id);
+                    deleteCourse(course);
                   }}>
                     Delete
                   </button> <br/>
-                  <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-primary">
+                  <Link to={`/Kanbas/Courses/${course.id}/Home`} className="btn btn-primary">
                     Go </Link>
                 </div>
               </div>

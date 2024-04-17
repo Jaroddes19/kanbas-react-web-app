@@ -12,14 +12,19 @@ export default function UserTable() {
     const [users, setUsers] = useState<User[]>([]);
     const [user, setUser] = useState<User>({
         _id: "", username: "", password: "", firstName: "",
-        lastName: "", role: "USER"
+        lastName: "", role: "USER", dob: "", email: ""
     });
     const createUser = async () => {
-        try {
-            const newUser = await client.createUser(user);
-            setUsers([newUser, ...users]);
-        } catch (err) {
-            console.log(err);
+        if (user.password && user.username) {
+            try {
+                const newUser = await client.createUser(user);
+                setUsers([newUser, ...users]);
+            } catch (err) {
+                console.log(err);
+            }
+        }
+        else {
+            console.log("All fields are required");
         }
     };
     const deleteUser = async (user: User) => {
@@ -39,12 +44,18 @@ export default function UserTable() {
         }
     };
     const updateUser = async () => {
-        try {
-            const status = await client.updateUser(user);
-            setUsers(users.map((u) =>
-                (u._id === user._id ? user : u)));
-        } catch (err) {
-            console.log(err);
+        if (user.password && user.username) {
+            try {
+                await client.updateUser(user);
+                setUsers(users.map((u) =>
+                    (u._id === user._id ? user : u)));
+            } catch (err) {
+                user.firstName = "Error";
+                setUser(user);
+            }
+        }
+        else {
+            console.log("All fields are required");
         }
     };
 
@@ -69,23 +80,27 @@ export default function UserTable() {
             <h1>User Table</h1>
             <table className="table">
                 <thead>
-                    {/* <tr> <!-- add Role to header row --> </tr> */}
                     <tr>
                         <td>
-                            <input value={user.password} onChange={(e) =>
-                                setUser({ ...user, password: e.target.value })} />
+                            <h3>Username & Password</h3>
+
                             <input value={user.username} onChange={(e) =>
                                 setUser({ ...user, username: e.target.value })} />
+                            <input value={user.password} onChange={(e) =>
+                                setUser({ ...user, password: e.target.value })} />
                         </td>
                         <td>
+                            <h3>First Name</h3>
                             <input value={user.firstName} onChange={(e) =>
                                 setUser({ ...user, firstName: e.target.value })} />
                         </td>
                         <td>
+                            <h3>Last Name</h3>
                             <input value={user.lastName} onChange={(e) =>
                                 setUser({ ...user, lastName: e.target.value })} />
                         </td>
                         <td>
+                            <h3>Role</h3>
                             <select value={user.role} onChange={(e) =>
                                 setUser({ ...user, role: e.target.value })}>
                                 <option value="USER">User</option>
@@ -95,11 +110,12 @@ export default function UserTable() {
                             </select>
                         </td>
                         <td>
-                            <BsFillCheckCircleFill
-                                onClick={updateUser}
-                                className="me-2 text-success fs-1 text"
-                            />
-                            <BsPlusCircleFill onClick={createUser} />
+                            <button onClick={() => updateUser()} >
+                                <BsFillCheckCircleFill />
+                            </button>
+                            <button className="btn btn-warning me-2" onClick={() => createUser()} >
+                                <BsPlusCircleFill />
+                            </button>
                         </td>
                         <th>&nbsp;</th>
                     </tr>
@@ -110,12 +126,13 @@ export default function UserTable() {
                             <td>{user.username}</td>
                             <td>{user.firstName}</td>
                             <td>{user.lastName}</td>
+                            <td>{user.role}</td>
                             <td>
                                 <button onClick={() => deleteUser(user)}>
                                     <BsTrash3Fill />
                                 </button>
-                                <button className="btn btn-warning me-2">
-                                    <BsPencil onClick={() => selectUser(user)} />
+                                <button className="btn btn-warning me-2" onClick={() => selectUser(user)} >
+                                    <BsPencil />
                                 </button>
                             </td>
                         </tr>

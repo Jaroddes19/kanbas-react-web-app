@@ -4,6 +4,7 @@ export const COURSES_API = `${BASE_API}/api/courses`;
 export interface Course {
     _id:
     string;
+    id: string;
     name:
     string;
     number:

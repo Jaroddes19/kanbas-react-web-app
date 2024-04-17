@@ -23,9 +23,9 @@ type Lesson = {
 
 
 function ModuleList() {
-  const handleDeleteModule = (moduleId: string) => {
-    client.deleteModule(moduleId).then((status) => {
-      dispatch(deleteModule(moduleId));
+  const handleDeleteModule = (module: any) => {
+    client.deleteModule(module).then((status) => {
+      dispatch(deleteModule(module._id));
     });
   };
   const handleUpdateModule = async () => {
@@ -103,7 +103,7 @@ function ModuleList() {
                   Edit
                 </button>
                 <button style={{ backgroundColor: "red" }}
-                  onClick={() => handleDeleteModule(module._id)}>
+                  onClick={() => handleDeleteModule(module)}>
                   Delete
                 </button>
               </div>

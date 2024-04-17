@@ -34,7 +34,7 @@ function Home() {
         <h3>Coming Up</h3>
         <hr />
         <ul className="wd-mini-navigation">
-          <li><a href="#">Lecture</a></li>
+          <li><button>Lecture</button></li>
         </ul>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import { HiMiniArrowRight, HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";

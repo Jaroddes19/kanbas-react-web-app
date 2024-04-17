@@ -7,10 +7,32 @@ type Lesson = {
   module: string;
 }
 
-type Module = { _id: string; id: string, name: string; description: string, course: string, lesson: Lesson }
+type Module = { _id: string; id: string, name: string; description: string, course: string, lessons: Lesson }
+
 const initialState = {
   modules: [] as Module[],
-  module: { name: "New Module 123", description: "New Description" },
+  module: {
+    name: "New Module 123", description: "New Description", course: "123", lessons: [
+      {
+        _id: "1",
+        name: "Lesson 1",
+        description: "Description 1",
+        module: "1",
+      },
+      {
+        _id: "2",
+        name: "Lesson 2",
+        description: "Description 2",
+        module: "1",
+      },
+      {
+        _id: "3",
+        name: "Lesson 3",
+        description: "Description 3",
+        module: "2",
+      },
+    ],
+  }
 };
 
 

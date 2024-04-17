@@ -50,6 +50,11 @@ function ModuleList() {
     state.modulesReducer.modules);
   const module = useSelector((state: KanbasState) =>
     state.modulesReducer.module);
+
+  useEffect(() => {
+    dispatch(setModule({ ...module, course: courseId }));
+  }, [courseId]);
+  
   const dispatch = useDispatch();
 
 

@@ -32,7 +32,7 @@ export const updateModule = async (module: Module) => {
 
 export const createModule = async (courseId: string | undefined, module: Module) => {
     const response = await axios.post(
-        `${MODULES_API}/modules`,
+        `${MODULES_API}`,
         module
     );
     return response.data;

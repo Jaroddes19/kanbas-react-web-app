@@ -16,7 +16,7 @@ export interface Module {
 
 }
 
-const API_BASE = process.env.REACT_APP_API_BASE_URL;
+const API_BASE = process.env.REACT_APP_BASE_API_URL;
 const MODULES_API = `${API_BASE}/api/modules`;
 
 export const deleteModule = async (module: Module) => {

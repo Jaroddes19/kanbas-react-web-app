@@ -6,7 +6,7 @@ type Todo = {
     due: string,
     completed: boolean,
 }
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = process.env.REACT_APP_BASE_API_URL;
 function WorkingWithArrays() {
     const API = `${API_BASE}/a5/todos`;
     const [todo, setTodo] = useState({

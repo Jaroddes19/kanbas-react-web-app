@@ -1,285 +1,255 @@
 <html>
-<table width = "100%">
-    <tbody>
-        <tr>
-            <td valign = "top">
 
-                <head>
-                    <title>Navigation Screen</title>
-                
-                    <ul>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Comments</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                
-                
-                </head>
-                
-                <body>
-                
-                </body>
-            </td>
-            <td valign = "top">
+<head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
 
-                <head>
-                    <title>Course Navigation Screen</title>
-                
-                    <ul>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">
-                                Home</a></li>
-                        <li><a href="#">
-                                Modules</a></li>
-                        <li><a href="#">
-                                Piazza</a></li>
-                        <li><a href="#">
-                                Zoom Meetings</a></li>
-                        <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                                Assignments</a></li>
-                        <li><a href="#">
-                                Quizzes</a></li>
-                        <li><a href="/Kanbas/Courses/Grades/screen.html">
-                                Grades</a></li>
-                        <li><a href="#">
-                                People</a></li>
-                        <li><a href="#">
-                                Panopto Video</a></li>
-                        <li><a href="#">
-                                Discussions</a></li>
-                        <li><a href="#">
-                                Pages</a></li>
-                        <li><a href="#">
-                                Files</a></li>
-                        <li><a href="#">
-                                Rubrics</a></li>
-                        <li><a href="#">
-                                Outcomes</a></li>
-                        <li><a href="#">
-                                Collaborations</a></li>
-                        <li><a href="#">
-                                Syllabus</a></li>
-                        <li><a href="#">
-                                Settings</a></li>
-                    </ul>
-                
-                
-                
-                </head>
-                
-                <body>
-                
-                </body>
-            </td>
-            <td valign = "top">
+</head>
 
-                <head>
-                    <title>Grades Screen</title>
-
-                </head>
-
-                <body>
-                    <select id="gradebook">
-                        <option value="None">None</option>
-                        <option selected value="Gradebook">Gradebook</option>
-                    </select>
-                    <button type="import">Import</button>
-                    <select id="export">
-                        <option value="None">None</option>
-                        <option selected value="Export">Export</option>
-                    </select>
-                    <button type="button">Configure</button>
-
-
-                    <h2>Student Names</h2>
-                    <form id="student-names">
-                        <label for="text-fields-names"></label>
-                        <input id="text-fields-names" placeholder="Search Students" /><br />
-                    </form>
-
-                    <h2>Assignment Names</h2>
-                    <form id="assignment-names">
-                        <label for="text-fields-assignment"></label>
-                        <input id="text-fields-assignment" placeholder="Search Assignments" /><br />
-                    </form>
-
-                    <button type="apply-filters">Apply Filters</button>
-
-
-
-                    <h2>Grades</h2>
-                    <table border="1" width="100%">
-                        <thead>
-                            <tr>
-                                <th>Student Name</th>
-                                <th>A1 Setup<br>
-                                    Out of 100</th>
-                                <th>A2 HTML<br>
-                                    Out of 100</th>
-                                <th>A3 CSS<br>
-                                    Out of 100</th>
-                                <th>A4 BOOTSTRAP<br>
-                                    Out of 100</th>
-                                <th>A5 JAVASCRIPT<br>
-                                    Out of 100</th>
-                                <th>A6 REACT<br>
-                                    Out of 100</th>
-                                <th>A7 REDUX<br>
-                                    Out of 100</th>
-                                <th>A8 NODE<br>
-                                    Out of 100</th>
-                                <th>A9 MONGO<br>
-                                    Out of 100</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>John Doe</td>
-                                <td><input type="number" value="100"></td>
-                                <td>92</td>
-                                <td>76</td>
-                                <td>81</td>
-                                <td>90</td>
-                                <td>95</td>
-                                <td><input type="number" value="88"></td>
-                                <td>79</td>
-                                <td>93</td>
-                            </tr>
-                            <tr>
-                                <td>Jane Smith</td>
-                                <td><input type="number" value="91"></td>
-                                <td>85</td>
-                                <td>97</td>
-                                <td><input type="number" value="78"></td>
-                                <td>89</td>
-                                <td>92</td>
-                                <td>83</td>
-                                <td>95</td>
-                                <td>87</td>
-                            </tr>
-                            <tr>
-                                <td>Michael Johnson</td>
-                                <td>78</td>
-                                <td>94</td>
-                                <td>87</td>
-                                <td>96</td>
-                                <td><input type="number" value="82"></td>
-                                <td>89</td>
-                                <td>91</td>
-                                <td>83</td>
-                                <td>90</td>
-                            </tr>
-                            <tr>
-                                <td>Sarah Williams</td>
-                                <td>85</td>
-                                <td>91</td>
-                                <td>79</td>
-                                <td>88</td>
-                                <td>93</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>92</td>
-                                <td><input type="number" value="84"></td>
-                            </tr>
-                            <tr>
-                                <td>David Brown</td>
-                                <td>92</td>
-                                <td>83</td>
-                                <td><input type="number" value="95"></td>
-                                <td>87</td>
-                                <td>84</td>
-                                <td>91</td>
-                                <td>89</td>
-                                <td>88</td>
-                                <td>96</td>
-                            </tr>
-                            <tr>
-                                <td>Emily Davis</td>
-                                <td>89</td>
-                                <td>88</td>
-                                <td>82</td>
-                                <td>93</td>
-                                <td>87</td>
-                                <td>96</td>
-                                <td>85</td>
-                                <td>91</td>
-                                <td>83</td>
-                            </tr>
-                            <tr>
-                                <td>Christopher Wilson</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>88</td>
-                                <td>82</td>
-                                <td>95</td>
-                                <td>83</td>
-                                <td>94</td>
-                                <td>87</td>
-                                <td>89</td>
-                            </tr>
-                            <tr>
-                                <td>Amanda Taylor</td>
-                                <td>94</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>89</td>
-                                <td>81</td>
-                                <td>88</td>
-                                <td>96</td>
-                                <td>85</td>
-                                <td>92</td>
-                            </tr>
-                            <tr>
-                                <td>Matthew Martinez</td>
-                                <td>83</td>
-                                <td>92</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>88</td>
-                                <td>82</td>
-                                <td>95</td>
-                                <td>84</td>
-                                <td>91</td>
-                            </tr>
-                            <tr>
-                                <td>Olivia Anderson</td>
-                                <td>90</td>
-                                <td>87</td>
-                                <td>93</td>
-                                <td>85</td>
-                                <td>92</td>
-                                <td>84</td>
-                                <td>91</td>
-                                <td>86</td>
-                                <td>88</td>
-                            </tr>
-                            <tr>
-                                <td>William Thompson</td>
-                                <td>88</td>
-                                <td>89</td>
-                                <td>81</td>
-                                <td>94</td>
-                                <td>86</td>
-                                <td>90</td>
-                                <td>83</td>
-                                <td>93</td>
-                                <td>85</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                </body>
-
-
-            </td>
-        </tr>
-    </tbody>
-</table>
+<body>
+    <div class="d-md-none row">
+        <ul class="wd-dropdown">
+            <li><a href="/Kanbas/Navigation/screen.html"><i class="fa fa-bars fa-lg"></i></a></li>
+            <li>Web Development<br />Modules</li>
+            <li><a href="/Kanbas/Courses/Navigation/screen.html"><i class="fa fa-chevron-down fa-lg"></i> </a></li>
+        </ul>
+    </div>
+    <div class="d-flex">
+        <div class="d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+                <li><a href="http://northeastern.edu"><img src="/images/northeastern_feature.png" class="icon"
+                            style="max-height: 50px" /></a></li>
+                <li class="wd-account">
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fa fa-user-circle"></i> Account</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i> Dashboard</a>
+                </li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a>
+                </li>
+                <li><a href="#"><i class="fa fa-calendar"></i>Calendar</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
+                <li><a href="#"><i class="fa fa-clock-o"></i>History</a></li>
+                <li><a href="#"><i class="fa fa-video-camera"></i>Studio</a></li>
+                <li><a href="#"><i class="fa fa-globe"></i>Commons</a></li>
+                <li><a href="#"><i class="fa fa-info-circle"></i><br />Help</a></li>
+            </ul>
+        </div>
+        <div class="d-none d-md-block">
+            <ul class="wd-navigation">
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Modules</a>
+                </li>
+                <li><a href="http://piazza.com">Piazza</a></li>
+                <li><a href="#">Zoom</a></li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                </li>
+                <li><a href="#">Quizzes</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+            </ul>
+        </div>
+        <div class="flex-fill">
+            <select id="gradebook">
+                <option value="None">None</option>
+                <option selected value="Gradebook">Gradebook</option>
+            </select>
+            <button type="import">Import</button>
+            <select id="export">
+                <option value="None">None</option>
+                <option selected value="Export">Export</option>
+            </select>
+            <button type="button">Configure</button>
+        
+        
+            <h2>Student Names</h2>
+            <form id="student-names">
+                <label for="text-fields-names"></label>
+                <input id="text-fields-names" placeholder="Search Students" /><br />
+            </form>
+        
+            <h2>Assignment Names</h2>
+            <form id="assignment-names">
+                <label for="text-fields-assignment"></label>
+                <input id="text-fields-assignment" placeholder="Search Assignments" /><br />
+            </form>
+        
+            <button type="apply-filters">Apply Filters</button>
+        
+        
+        
+            <h2>Grades</h2>
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>A1 Setup<br>
+                            Out of 100</th>
+                        <th>A2 HTML<br>
+                            Out of 100</th>
+                        <th>A3 CSS<br>
+                            Out of 100</th>
+                        <th>A4 BOOTSTRAP<br>
+                            Out of 100</th>
+                        <th>A5 JAVASCRIPT<br>
+                            Out of 100</th>
+                        <th>A6 REACT<br>
+                            Out of 100</th>
+                        <th>A7 REDUX<br>
+                            Out of 100</th>
+                        <th>A8 NODE<br>
+                            Out of 100</th>
+                        <th>A9 MONGO<br>
+                            Out of 100</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td><input type="number" value="100"></td>
+                        <td>92</td>
+                        <td>76</td>
+                        <td>81</td>
+                        <td>90</td>
+                        <td>95</td>
+                        <td><input type="number" value="88"></td>
+                        <td>79</td>
+                        <td>93</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td><input type="number" value="91"></td>
+                        <td>85</td>
+                        <td>97</td>
+                        <td><input type="number" value="78"></td>
+                        <td>89</td>
+                        <td>92</td>
+                        <td>83</td>
+                        <td>95</td>
+                        <td>87</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Johnson</td>
+                        <td>78</td>
+                        <td>94</td>
+                        <td>87</td>
+                        <td>96</td>
+                        <td><input type="number" value="82"></td>
+                        <td>89</td>
+                        <td>91</td>
+                        <td>83</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Williams</td>
+                        <td>85</td>
+                        <td>91</td>
+                        <td>79</td>
+                        <td>88</td>
+                        <td>93</td>
+                        <td>86</td>
+                        <td>90</td>
+                        <td>92</td>
+                        <td><input type="number" value="84"></td>
+                    </tr>
+                    <tr>
+                        <td>David Brown</td>
+                        <td>92</td>
+                        <td>83</td>
+                        <td><input type="number" value="95"></td>
+                        <td>87</td>
+                        <td>84</td>
+                        <td>91</td>
+                        <td>89</td>
+                        <td>88</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>89</td>
+                        <td>88</td>
+                        <td>82</td>
+                        <td>93</td>
+                        <td>87</td>
+                        <td>96</td>
+                        <td>85</td>
+                        <td>91</td>
+                        <td>83</td>
+                    </tr>
+                    <tr>
+                        <td>Christopher Wilson</td>
+                        <td>86</td>
+                        <td>90</td>
+                        <td>88</td>
+                        <td>82</td>
+                        <td>95</td>
+                        <td>83</td>
+                        <td>94</td>
+                        <td>87</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <td>Amanda Taylor</td>
+                        <td>94</td>
+                        <td>86</td>
+                        <td>90</td>
+                        <td>89</td>
+                        <td>81</td>
+                        <td>88</td>
+                        <td>96</td>
+                        <td>85</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>Matthew Martinez</td>
+                        <td>83</td>
+                        <td>92</td>
+                        <td>86</td>
+                        <td>90</td>
+                        <td>88</td>
+                        <td>82</td>
+                        <td>95</td>
+                        <td>84</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <td>Olivia Anderson</td>
+                        <td>90</td>
+                        <td>87</td>
+                        <td>93</td>
+                        <td>85</td>
+                        <td>92</td>
+                        <td>84</td>
+                        <td>91</td>
+                        <td>86</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>William Thompson</td>
+                        <td>88</td>
+                        <td>89</td>
+                        <td>81</td>
+                        <td>94</td>
+                        <td>86</td>
+                        <td>90</td>
+                        <td>83</td>
+                        <td>93</td>
+                        <td>85</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+</body>
 
 </html>
